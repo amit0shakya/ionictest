@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-card-content *ngIf='carddata'>
+    <div *ngFor="let data of carddata">
+      <div style="height:7px; background:red; margin-top:3px; ">hello</div>
+      <card [cardvalue]='data'></card>
+  </div>
+  </ion-card-content>
+
+  <button ion-button (click)='showform()'>Add Image</button>
+
+</ion-content>
